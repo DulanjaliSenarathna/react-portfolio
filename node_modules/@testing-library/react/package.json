@@ -1,6 +1,6 @@
 {
   "name": "@testing-library/react",
-  "version": "12.1.4",
+  "version": "12.1.5",
   "description": "Simple and complete React DOM testing utilities that encourage good testing practices.",
   "main": "dist/index.js",
   "types": "types/index.d.ts",
@@ -15,6 +15,7 @@
     "build:bundle:pure": "dotenv -e .bundle.main.env -e .bundle.pure.env kcd-scripts build -- --bundle --no-clean",
     "build:main": "kcd-scripts build --no-clean",
     "format": "kcd-scripts format",
+    "install:csb": "npm install",
     "lint": "kcd-scripts lint",
     "setup": "npm install && npm run validate -s",
     "test": "kcd-scripts test",
@@ -46,7 +47,7 @@
   "dependencies": {
     "@babel/runtime": "^7.12.5",
     "@testing-library/dom": "^8.0.0",
-    "@types/react-dom": "*"
+    "@types/react-dom": "<18.0.0"
   },
   "devDependencies": {
     "@testing-library/jest-dom": "^5.11.6",
@@ -59,8 +60,8 @@
     "typescript": "^4.1.2"
   },
   "peerDependencies": {
-    "react": "*",
-    "react-dom": "*"
+    "react": "<18.0.0",
+    "react-dom": "<18.0.0"
   },
   "eslintConfig": {
     "extends": "./node_modules/kcd-scripts/eslint.js",
