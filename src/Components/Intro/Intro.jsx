@@ -48,12 +48,20 @@ const Intro = () => {
             whileInView={{left: '-24%'}}
             transition={{transition}}
             src={glassesimoji} alt="" />
-            <div style={{top: '-4%', left: '68%'}}>
+            <motion.div 
+            initial={{top: '-4%', left: '74%'}}
+            whileInView={{left: '68%'}}
+            transition={{transition}}
+            style={{top: '-4%', left: '68%'}}>
                 <FloatingDiv image={Crown} txt1='Web' txt2='Developer'/>
-            </div>
-            <div style={{top: '18rem', left: '0rem'}}>
+            </motion.div>
+            <motion.div
+            initial={{left: '9%', top: '18%'}}
+            whileInView={{left: '0rem'}}
+            transition={{transition}}
+            style={{top: '18rem', left: '0rem'}}>
                 <FloatingDiv image={thumbup} txt1='Best Design' txt2='Award'/>
-            </div>
+            </motion.div>
             {/*blur divs*/}
             <div className="blur" style={{background: "rgb(238 210 255)"}}> </div>
             <div className="blur" style={{background: "rgb(193 245 255)", top:"17rem", width:"21rem", height:"11rem",left:"-9rem"}}></div>

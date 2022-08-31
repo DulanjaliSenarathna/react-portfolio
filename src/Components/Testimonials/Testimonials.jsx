@@ -35,7 +35,7 @@ const clients = [
 ]
 
   return (
-    <div className="t-wrapper">
+    <div className="t-wrapper" id='Testimonials'>
         <div className="t-heading">
             <span>Clients always get</span>
             <span>Exceptional Work</span>
